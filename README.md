@@ -14,7 +14,8 @@
 1. Docker container running claude code with anthropic tokens
 2. Docker model runner running local model, claude code in separate container
 3. (Max security) docker sandboxes (experimental) running claude code, docker model running locally
-4. Another sandbox method: deno sandbox or firecracker
+4. Another sandbox method: deno sandbox or firecracker or podman to not share root access
+5. Docker model runner running local model, claude code running normally on host
 
 
 # Useful websites
@@ -22,3 +23,4 @@
 - [Claude code - gpt-oss - docker model runner](https://www.docker.com/blog/run-claude-code-locally-docker-model-runner/)
 - [Claude console for buying tokens](https://platform.claude.com/dashboard)
 - [Claude code overview](https://code.claude.com/docs/en/overview)
+- [Docker model runner to make or modify models](https://www.docker.com/blog/how-to-build-run-and-package-ai-models-locally-with-docker-model-runner/)
