@@ -1,0 +1,3 @@
+Simulated 1000 photons
+Absorbed: 596
+Escaped: 404

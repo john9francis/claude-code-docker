@@ -139,6 +139,12 @@ form.addEventListener('submit', e => {
   e.preventDefault();
   if (!validate()) return;
 
+// Warn if project is public
+if (!isPrivate) {
+  const proceed = confirm('This project is public. Anything you post will be public. Proceed?');
+  if (!proceed) return;
+}
+
   submitBtn.classList.add('loading');
   submitBtn.innerHTML = '<div class="spinner"></div> Creating…';
 
